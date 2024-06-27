@@ -1,0 +1,91 @@
+header{
+    text-align: center;
+    height :100px;
+    margin-top : 30px;
+    margin-bottom : 100px;
+    background-color: rgb(54, 75, 43);
+}
+section{
+    text-align: center;
+    height :100px;
+    margin-top : 50px;
+    margin-bottom : 100px;
+    background-color: rgb(54, 75, 43);
+}
+
+#menubar ul {
+    display : inline;
+    width : 100%;
+    margin : 0px;
+    padding : 0px;
+}
+
+#menubar ul li {
+    font-family : 'GongGothicMedium', sans-serif;
+    display: inline;
+    list-style-type: disc;
+    padding : 100px;
+    width : 100%;
+}
+
+#menubar ul li :hover{
+    transition-duration: 1.5s;
+    
+}
+.Member {
+    font-family: 'GongGothicMedium', sans-seri;
+    letter-spacing: 0.2em;
+    color :rgb(213, 231, 184);
+    text-align: left;
+    font-size: 40px;
+    transform : translate(0px, -95px);
+    text-align: left;
+
+}
+a{
+    text-decoration: underline;
+    color : rgb(213, 231, 184);
+    font-size : 20px;
+    width : 200%;
+    
+}
+
+body {
+    min-height : 100vh;
+    text-align: center;
+    background-color: rgb(54, 75, 43);
+    color : rgb(213, 231, 184);
+    font-family : 'GongGothicMedium';
+    
+}
+ul, li {
+    text-align: center;
+    height :100px;
+    margin : 0 auto;
+    color : rgb(213, 231, 184);
+    font-family : 'GongGothicMedium';
+
+}
+
+#msg {
+    font-family : 'Freesentation-9Black';
+}
+
+section {
+    text-align: left;
+    display: contents;
+}
+
+#myVideo{
+    width : 100%;
+    height : auto;
+
+}
+
+iframe{
+    position:relative;
+    left: 0; top: 0;
+    width : 100%;
+    height : 100%;
+    padding-bottom: 75%;
+}
