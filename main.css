@@ -39,6 +39,7 @@ section{
     background-color: rgb(54, 75, 43);
 }
 #menubar {
+    font-family : 'GongGothicMedium', sans-serif;
     position: relative;
     text-align: center;
     display: inline-block;
@@ -61,7 +62,6 @@ section{
 }
 
 #menubar ul li {
-    font-family : 'GongGothicMedium', sans-serif;
     display: flex;
     align-items: center;
     border-left : 1px solid #999;
@@ -74,77 +74,18 @@ section{
 #menubar ul li :hover{
     transition-duration: 1.5s;
     background-color: rgba(213, 231, 184, 0.2);
+    border-radius: 100px;
 }
-#goods {
-    position: relative;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    top : 0;
-    width: 100%;
-    background-color: rgb(54, 75, 43);
-    z-index: 1000;
-    padding: 10px 0;
-}
-
-#goods ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0 0 10px;
-    margin: 0;
-}
-
-#goods ul li {
-    font-family : 'GongGothicMedium', sans-serif;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    padding : 0 50px;
-    position: relative;
-}
-/*
-#goods ul li :hover{
-    transition-duration: 1.5s;
-    background-color: rgba(213, 231, 184, 0.2);
-}*/
-/*
-#goods>ul>li {
-    display: inline-block;
-    width: 80px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    position: relative;
-}*/
-#goods ul ul {
-    display: none;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    background-attachment: rgb(54, 75, 43);
+* {
     margin: 0;
     padding: 0;
-    list-style: none;
-}
-#goods ul ul li {
-    width: 100%;
-    padding: 0;
-    text-align: center;
-}
-
-#goods ul li:hover ul {
-    display: block;
-    /*text-align: center;
-    line-height: 30px;
-    position: absolute;*/
 }
 
 a{
-    text-decoration: underline;
+    text-decoration: none;
     color : rgb(213, 231, 184);
     font-size : 20px;
+    text-align: center;
 }
 
 body {
@@ -159,7 +100,73 @@ ul, li {
     text-align: center;
     color : rgb(213, 231, 184);
     font-family : 'GongGothicMedium';
-    list-style-type: none;
+    list-style: none;
+}
+
+#goods{
+    font: bold 15px "GongGothicMedium";
+    width: 100%;
+    
+    background-color: rgb(34, 49, 27);
+}
+#goods ul {
+    list-style: none;
+    z-index: 2;
+}
+#goods a{
+    color: rgb(213, 231, 184);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+#goods > ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+#goods > ul > li {
+    position: relative;
+}
+
+#goods > ul > li > a {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+#goods > ul > li > ul {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgb(213, 231, 184);
+    border-radius: 6px;
+    background: rgb(34, 49, 27);
+}
+
+#goods > ul > li:hover ul {
+    display: block;
+}
+
+#goods > ul > li li a{
+    display: block;
+    padding: 10px 15px;
+}
+
+#goods > ul > li li a:hover{
+    background: rgb(34, 49, 27);
+}
+
+#goods > ul > li > li+li {
+    margin-top: 5px;
+}
+
+#goods ul li :hover{
+    transition-duration: 1.5s;
+    background-color: rgba(213, 231, 184, 0.2);
+    border-radius: 50px;
 }
 
 #root {
