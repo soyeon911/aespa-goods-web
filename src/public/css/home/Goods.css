@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height : 100vh;
+    text-align: center;
+    background-color: rgb(54, 75, 43);
+    color : rgb(213, 231, 184);
+    font-family : 'GongGothicMedium';
+}
+a{
+    text-decoration: none;
+    color : rgb(213, 231, 184);
+    font-size : 20px;
+    text-align: center;
+}
+ul, li {
+    text-align: center;
+    color : rgb(213, 231, 184);
+    font-family : 'GongGothicMedium';
+    list-style: none;
+}
+
+#goods{
+    font: bold 15px "GongGothicMedium";
+    width: 100%;
+    background-color: rgb(34, 49, 27);
+}
+#goods ul {
+    list-style: none;
+    z-index: 2;
+}
+#goods a{
+    color: rgb(213, 231, 184);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+#goods > ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+#goods > ul > li {
+    position: relative;
+}
+
+#goods > ul > li > a {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#goods > ul > li > ul {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgb(213, 231, 184);
+    border-radius: 6px;
+    background: rgb(34, 49, 27);
+}
+
+#goods > ul > li:hover ul {
+    display: block;
+}
+
+#goods > ul > li li a{
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+#goods > ul > li li a:hover{
+    background: rgb(34, 49, 27);
+    text-align: center;
+}
+
+#goods > ul > li > li+li {
+    margin-top: 5px;
+}
+
+#goods ul li :hover{
+    transition-duration: 1.5s;
+    background-color: rgba(213, 231, 184, 0.2);
+    border-radius: 50px;
+}
+
+.navi {
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navi #logo {
+    line-height: 60px;
+}
+
+.navi #logo img {
+    vertical-align: middle;
+}
+
+.navi #menu {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navi #menu li {
+    float: left;
+    margin-left: 30px;
+    line-height: 60px;
+}
+
+.navi #menu li a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+
+/*.header {
+    height: 450px;
+    background-image: url(https://i.postimg.cc/fT8hKW76/hero-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }*/
+
+    .text h1 {
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+      .product-list {
+        width: 795px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: gainsboro;
+      }
+      .product {
+        display: block;
+        width: 225px;
+        text-align: center;
+        color: rgb(213, 231, 184);
+        text-decoration: none;
+        font-size: 16px;
+        float: left;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .product-name {
+        margin-top: 20px;
+        margin-bottom: 4px;
+        text-align: left;
+      }
+      .product-price {
+        margin-bottom: 80px;
+        text-align: left;
+      }
+      .clearfix{
+        clear: both;
+      }
+      .footer{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 80px;
+      }
+      .footer a{
+        text-decoration: none;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+    

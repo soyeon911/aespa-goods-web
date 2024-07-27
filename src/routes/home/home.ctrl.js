@@ -19,6 +19,9 @@ const output = {
     Karina: (req, res) => {
         res.render("home/Karina");
     },
+    Music : (req, res) => {
+        res.render("/Users/soyeon/Desktop/낙서장/aespa/src/views/home/goods/Karina/Music.ejs");
+    },
 
     Winter: (req, res) => {
         res.render("home/Winter");
@@ -45,7 +48,9 @@ const process = {
     Karina: async (req, res) => {
         res.render("Karina");
     },
-
+    music: async (req, res) => {
+        res.render("Music");
+    },
     Winter: async (req, res) => {
         res.render("Winter");
     },
@@ -56,6 +61,8 @@ const process = {
         res.render("Ningning");
     }
 };
+
+
 
 module.exports = {
     output, 
